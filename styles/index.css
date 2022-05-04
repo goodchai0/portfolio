@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+:root {
+  --background-color: #333647;
+  --pink-color: #f87652;
+  --secondary-color: #bbbbbb;
+  --bg-color-of-lists-in-skills-section: #b1b1c1;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: var(--background-color) !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+td,
+a {
+  cursor: pointer;
+}
+.particles-js-canvas-el {
+  position: absolute;
+  height: 100% !important;
+  width: 100%;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: -1000;
+  margin: 0px;
+}
+.nav_section .navbar-brand {
+  font-size: 22px;
+  color: white;
+}
+.nav_section .navbar-brand span {
+  color: var(--pink-color);
+}
+.nav_section .navbar-nav li {
+  margin: 0px 8px;
+}
+.nav_section .navbar-nav li a {
+  color: white !important;
+  font-size: 15px;
+}
+.nav_section .navbar-nav .nav-link::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  background-color: white;
+  position: absolute;
+  bottom: 7px;
+  transition: 0.5s;
+}
+.nav_section .navbar-nav .nav-link:hover::before {
+  content: "";
+  width: 35px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: 7px;
+  transition: 0.5s;
+}
+.hero-section .row {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.hero-section .row h1,
+h2,
+h3,
+h5,
+h4,
+p {
+  color: white;
+}
+.hero-section .row h3 {
+  font-size: 19px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.hero-section .row h3::after {
+  content: "";
+  position: absolute;
+  text-align: center;
+  background-color: white;
+  top: 10px;
+  width: 90px;
+  height: 2px;
+  margin: 0px;
+}
+
+.hero-section .row h1 {
+  font-size: 46px;
+  font-weight: 800;
+}
+.hero-section .row h2 {
+  font-size: 20px;
+  font-weight: 100;
+  margin: 8px 0px;
+}
+.hero-section .row p {
+  font-size: 13px;
+  margin-top: 13px;
+  line-height: 21px;
+  color: var(--secondary-color);
+}
+.hero-section .row button {
+  border-radius: 10px;
+  font-size: 19px;
+  color: white;
+  background-color: var(--pink-color);
+  border: 3px solid var(--pink-color);
+  width: 113px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+}
+.hero-section .row button:hover {
+  animation: swing;
+  animation-duration: 0.5s;
+  background: white;
+  color: black;
+  background-color: white;
+}
+.hero-section .row img {
+  width: 60%;
+  border-radius: 90px;
+}
+
+@media (max-width: 1200px) and (min-width: 993px) {
+  .hero-section .row h1 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 993px) and (min-width: 763px) {
+  .hero-section .row h1 {
+    font-size: 25px;
+  }
+  .hero-section .row h2 {
+    font-size: 15px;
+  }
+  .hero-section .row p {
+    font-size: 11px;
+  }
+  .hero-section .row h3 {
+    font-size: 15px;
+  }
+  .hero-section .row button {
+    font-size: 15px;
+  }
+}
+@media (max-width: 763px) and (min-width: 500px) {
+  .hero-section {
+    margin: 55px 0px;
+  }
+  .hero-section .row h1 {
+    font-size: 42px;
+    text-align: center;
+  }
+  .hero-section .row h2 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .hero-section .row p {
+    font-size: 11px;
+    text-align: center;
+  }
+  .hero-section .row h3 {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .hero-section .row h3::after {
+    width: 0px;
+  }
+  .hero-section .row button {
+    font-size: 15px;
+  }
+  .hero-section .btn_container {
+    justify-content: center;
+    text-align: center;
+    margin-top: -20px;
+  }
+  .hero-section .btn_container button {
+    width: 100px;
+    height: 43px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .hero-section img {
+    width: 60%;
+    margin: 20px;
+  }
+}
+
+/* about us */
+
+.about_section {
+  background-color: #282a39;
+  padding: 120px 0;
+}
+
+.about_section #heading {
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 0.5px;
+  line-height: 57px;
+}
+.about_section #lets_talk {
+  color: white;
+  font-weight: 400px;
+  margin-top: 14px;
+}
+.about_section #info_gmail {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--pink-color);
+  margin-top: 35px;
+  word-spacing: 6px;
+}
+.about_section .contact_info {
+  margin-top: 15px;
+}
+.about_section .contact_info h5 {
+  font-size: 15px;
+  font-weight: 400;
+  word-spacing: 6px;
+}
+.about_section .about_me_right_section #txt {
+  font-size: 15px;
+  margin-top: 13px;
+  line-height: 25px;
+  color: var(--secondary-color);
+}
+.about_section .about_me_right_section table td {
+  border: none;
+  color: white;
+  font-size: 14px;
+}
+.about_section .about_me_right_section button {
+  border-radius: 7px;
+  font-size: 15px;
+  color: white;
+  background-color: var(--pink-color);
+  border: 3px solid var(--pink-color);
+  font-family: "Poppins", sans-serif;
+  margin-top: 30px;
+}
+.about_section .about_me_right_section button:hover {
+  animation: bounce;
+  animation-duration: 0.5s;
+}
+
+@media (max-width: 993px) and (min-width: 768px) {
+  .about_section .about_me_right_section #txt {
+    font-size: 12px;
+  }
+  .about_section #heading {
+    font-size: 28px !important;
+  }
+}
+
+/* skill */
+
+.skills_section {
+  padding: 100px 0px;
+}
+.skills_section_left_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills_section #heading {
+  font-weight: 600;
+  font-size: 50px;
+}
+.skills_section hr {
+  border: 0.5px solid var(--pink-color);
+  width: 6rem;
+  margin: 12px 0px;
+}
+.skills_section p {
+  color: var(--secondary-color);
+  font-size: 13px;
+}
+.skills_section .social_media_icons .list-group-item {
+  border: none;
+  color: white;
+  border-left: 2px solid var(--pink-color);
+  border-radius: 0px;
+  margin: 5px 0px;
+  width: 200px;
+  background-color: var(--bg-color-of-lists-in-skills-section);
+  font-size: 14px;
+}
+.skills_section .social_media_icons .list-group-item:hover a {
+  margin-left: 16px;
+  transition: 0.5s;
+}
+.skills_section_right_section .each_skills {
+  margin: 25px 0px;
+}
+.skills_section_right_section .each_skills span {
+  color: white;
+  font-size: 14px;
+}
+.skills_section_right_section .each_skills .progress {
+  background-color: var(--bg-color-of-lists-in-skills-section);
+  border-radius: 100px;
+  margin-top: 3px;
+  height: 10px;
+}
+.skills_section_right_section .each_skills .progress-bar {
+  background-color: var(--pink-color) !important;
+  color: transparent;
+}
